@@ -1,0 +1,21 @@
+package Task3;
+
+public class ShapeTest {
+    public static void main(String[] args) {
+        ShapeFactory shapeFactory = new ShapeFactory();
+
+        Shape square = shapeFactory.getShape("SQUARE");
+        if (square != null){
+            System.out.println("Square: ");
+            square.draw();
+            System.out.println();
+        }
+
+        Shape circle = shapeFactory.getShape("CIRCLE");
+        if (circle != null){
+            System.out.println("CIrcle: ");
+            circle.draw();
+            System.out.println();
+        }
+    }
+}
